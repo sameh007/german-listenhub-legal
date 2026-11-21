@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Contact &amp; Support — German ListenHub</title>
+<style>
+:root{--bg:#f7f9fd;--card:#fff;--text:#1d2433;--muted:#5b6578;--primary:#2767d6;--line:#e1e6f0}
+@media (prefers-color-scheme:dark){:root{--bg:#10141c;--card:#171c27;--text:#e9edf5;--muted:#a3adc0;--primary:#7aa7ff;--line:#2a3142}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.7 system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans Arabic",Tahoma,sans-serif}
+header{max-width:760px;margin:0 auto;padding:20px 16px 0;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.brand{font-weight:700;font-size:18px;color:var(--primary);text-decoration:none}
+.lang button{border:1px solid var(--line);background:var(--card);color:var(--text);padding:6px 14px;border-radius:999px;cursor:pointer;font:inherit;font-size:14px}
+.lang button[aria-pressed=true]{background:var(--primary);color:#fff;border-color:var(--primary)}
+main{max-width:760px;margin:16px auto 48px;padding:0 16px}
+article{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px 22px}
+h1{font-size:26px;margin:0 0 4px}h2{font-size:19px;margin:26px 0 6px}
+.date{color:var(--muted);font-size:14px;margin:0 0 16px}
+p,li{margin:8px 0}ul,ol{padding-inline-start:22px}
+a{color:var(--primary)}
+.nav{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.nav a{border:1px solid var(--line);border-radius:12px;padding:10px 16px;text-decoration:none;background:var(--card)}
+footer{max-width:760px;margin:0 auto 32px;padding:0 16px;color:var(--muted);font-size:14px;text-align:center}
+.note{border-inline-start:4px solid var(--primary);background:rgba(39,103,214,.08);padding:10px 14px;border-radius:8px}
+</style>
+</head>
+<body>
+<header><a class="brand" href="index.html">German ListenHub</a>
+<div class="lang"><button type="button" data-set="en" aria-pressed="true">English</button> <button type="button" data-set="ar" aria-pressed="false">العربية</button></div></header>
+<main>
+<article data-lang="en"><h1>Contact &amp; Support</h1><p class="date">Last updated: November 20, 2026</p>
+
+<p>We are happy to help. Write to us at <a href="mailto:support@germanlistenhub.com">support@germanlistenhub.com</a>.</p>
+<h2>When you write to us, please include</h2>
+<ul><li>What happened and on which screen.</li><li>Your phone model and Android version.</li><li>The app version (Settings → About).</li><li>A screenshot, if possible.</li></ul>
+<h2>Common questions</h2>
+<p><b>Content does not open.</b> Content needs an internet connection. Check your connection and pull down on the list to refresh.</p>
+<p><b>My saved items or progress are missing.</b> Saving and sync need you to be signed in with Google. Guest activity is not kept after the app restarts.</p>
+<p><b>I want to stop the daily reminder.</b> Turn off the app's notifications in your phone's notification settings.</p>
+<p><b>I want to delete my account.</b> See the <a href="delete-account.html">account deletion page</a>.</p>
+<p><a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Use</a></p>
+
+</article>
+<article data-lang="ar" dir="rtl" lang="ar" hidden><h1>تواصل معنا والدعم</h1><p class="date">آخر تحديث: 20 نوفمبر 2026</p>
+
+<p>يسعدنا مساعدتك. راسلنا على <a href="mailto:support@germanlistenhub.com">support@germanlistenhub.com</a>.</p>
+<h2>عند مراسلتنا يرجى ذكر</h2>
+<ul><li>ماذا حدث وفي أي شاشة.</li><li>موديل هاتفك وإصدار أندرويد.</li><li>إصدار التطبيق (الإعدادات ← حول التطبيق).</li><li>لقطة شاشة إن أمكن.</li></ul>
+<h2>أسئلة شائعة</h2>
+<p><b>المحتوى لا يفتح.</b> المحتوى يحتاج اتصالاً بالإنترنت. تأكد من الاتصال واسحب القائمة لأسفل لتحديثها.</p>
+<p><b>العناصر المحفوظة أو تقدّمي غير ظاهرة.</b> الحفظ والمزامنة يتطلبان تسجيل الدخول بحساب Google. ونشاط الضيف لا يُحفظ بعد إعادة تشغيل التطبيق.</p>
+<p><b>أريد إيقاف التذكير اليومي.</b> أوقف إشعارات التطبيق من إعدادات الإشعارات في هاتفك.</p>
+<p><b>أريد حذف حسابي.</b> راجع <a href="delete-account.html?lang=ar">صفحة حذف الحساب</a>.</p>
+<p><a href="privacy.html?lang=ar">سياسة الخصوصية</a> · <a href="terms.html?lang=ar">شروط الاستخدام</a></p>
+
+</article>
+</main>
+<footer>© German ListenHub · <a href="mailto:support@germanlistenhub.com">support@germanlistenhub.com</a></footer>
+<script>
+(function(){
+  var q=new URLSearchParams(location.search).get('lang');
+  var lang=(q==='ar'||q==='en')?q:((navigator.language||'').toLowerCase().indexOf('ar')===0?'ar':'en');
+  function show(l){
+    document.documentElement.lang=l;
+    document.documentElement.dir=(l==='ar')?'rtl':'ltr';
+    document.querySelectorAll('[data-lang]').forEach(function(e){e.hidden=(e.getAttribute('data-lang')!==l);});
+    document.querySelectorAll('.lang button').forEach(function(b){b.setAttribute('aria-pressed',b.getAttribute('data-set')===l?'true':'false');});
+  }
+  document.querySelectorAll('.lang button').forEach(function(b){b.addEventListener('click',function(){show(b.getAttribute('data-set'));});});
+  show(lang);
+})();
+</script>
+</body>
+</html>
